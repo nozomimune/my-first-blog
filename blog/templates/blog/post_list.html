@@ -20,14 +20,14 @@
                           <div class="date">
                               <p>published: {{ post.published_date }}</p>
                           </div>
-                          <h2><a href="">{{ post.title }}</a></h2>
+                          <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
                           <p>{{ post.text|linebreaksbr }}</p>
                       </div>
                   {% endfor %}
               </div>
           </div>
       </div>
-            
+
         <div>
             <p>公開日: 2014/06/14, 12:14</p>
             <h2><a href="">2番目の投稿</a></h2>
